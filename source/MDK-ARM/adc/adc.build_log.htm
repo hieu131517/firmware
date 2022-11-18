@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a a, a, LIC=VGX63-AM23U-DKMBN-YPFB6-LB2K6-X2EQ3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+F:\test\do an3\MDK-ARM\adc.uvprojx
+Project File Date:  06/03/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'adc'
+compiling main.c...
+../Core/Src/main.c(296): warning:  #61-D: integer operation result is out of range
+  		tds= (133.42*a*a*a/(4096*4096*4096)-255.86*a*a/(4096*4096)+857.39*a/4096)/2;
+../Core/Src/main.c(296): warning:  #39-D: division by zero
+  		tds= (133.42*a*a*a/(4096*4096*4096)-255.86*a*a/(4096*4096)+857.39*a/4096)/2;
+../Core/Src/main.c(447): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(
+PIOC, 
+PIO_PIN_13, d1);
+../Core/Src/main.c(448): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_0, d2);
+../Core/Src/main.c(449): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_1, d3);
+../Core/Src/main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=15124 RO-data=544 RW-data=68 ZI-data=2100  
+FromELF: creating hex file...
+"adc\adc.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM::CMSIS:CORE:5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\test\do an3\MDK-ARM\RTE
+  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Admin\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+      Source file:   CMSIS\Core\Template\ARMv8-M\main_s.c
+      Source file:   CMSIS\Core\Template\ARMv8-M\tz_context.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
